@@ -1,0 +1,378 @@
+1.1. Uudenvuodenpäivä
+2.1. Aapeli
+3.1. Elmo, Elmeri, Elmer
+4.1. Ruut
+5.1. Lea, Leea
+6.1. Harri
+7.1. Aku, Aukusti, August
+8.1. Titta, Hilppa
+9.1. Veikko, Veli, Veijo, Veikka
+10.1. Nyyrikki
+11.1. Kari, Karri
+12.1. Toini
+13.1. Nuutti
+14.1. Sakari, Saku
+15.1. Solja
+16.1. Ilmari, Ilmo
+17.1. Toni, Anton, Anttoni, Antto
+18.1. Laura
+19.1. Heikki, Henrik, Henri, Henrikki
+20.1. Henna, Henni, Henriikka
+21.1. Aune, Oona, Netta, Auni
+22.1. Visa
+23.1. Enni, Eine, Eini
+24.1. Senja
+25.1. Paavo, Pauli, Paul, Paavali
+26.1. Joonatan
+27.1. Viljo
+28.1. Kalle, Kaarlo, Kaarle, Mies
+29.1. Valtteri
+30.1. Irja
+31.1. Alli
+
+1.2. Riitta
+2.2. Jemina, Aamu
+3.2. Valo
+4.2. Armi, Ronja
+5.2. Asser
+6.2. Terhi, Teija, Tiia, Tea, Terhikki
+7.2. Riku, Rikhard
+8.2. Laina
+9.2. Raija, Raisa
+10.2. Elina, Ella, Ellen, Elna
+11.2. Talvikki
+12.2. Elma, Elmi
+13.2. Sulo, Sulho
+14.2. Voitto, Valentin, Tino
+15.2. Sipi, Sippo
+16.2. Kai
+17.2. Väinö, Väinämö
+18.2. Kaino
+19.2. Eija
+20.2. Heli, Helinä, Heljä, Hely
+21.2. Keijo
+22.2. Tuulikki, Tuuli, Tuulia
+23.2. Aslak
+24.2. Matti, Matias
+25.2. Tuija, Tuire
+26.2. Nestori
+27.2. Torsti
+28.2. Onni
+29.2. Karkauspäivä (2008)
+
+1.3. Alpo, Alvi, Alpi
+2.3. Virve, Virva
+3.3. Kauko
+4.3. Ari, Arsi, Atro
+5.3. Leila, Laila
+6.3. Tarmo
+7.3. Tarja, Taru
+8.3. Vilppu
+9.3. Auvo
+10.3. Aurora, Aura, Auri
+11.3. Kalervo
+12.3. Reijo, Reko
+13.3. Erno, Ernesti, Tarvo
+14.3. Matilda, Tilda
+15.3. Risto
+16.3. Ilkka
+17.3. Kerttu, Kerttuli
+18.3. Eetu, Edvard
+19.3. Juuso, Josefiina, Jooseppi, Joosef
+20.3. Aki, Kim, Joakim, Jaakkima
+21.3. Pentti
+22.3. Vihtori
+23.3. Akseli
+24.3. Gabriel, Kaapo, Kaapro, Kaappo
+25.3. Aija
+26.3. Manu, Manne, Immanuel, Immo
+27.3. Sauli, Saul
+28.3. Armas
+29.3. Jouni, Joni, Joonas, Joona, Jonne, Jonni
+30.3. Usko
+31.3. Irma, Irmeli
+
+1.4. Raita, Pulmu
+2.4. Pellervo
+3.4. Sampo, Veeti
+4.4. Ukko
+5.4. Irene, Irina, Ira, Iro
+6.4. Ville, Vilho, Vilhelm, Viljami, Vili, Jami
+7.4. Allan, Ahvo
+8.4. Suoma, Suometar
+9.4. Elias, Eelis, Eeli, Eljas
+10.4. Tero
+11.4. Verna
+12.4. Julia, Julius, Juliaana, Janna
+13.4. Tellervo
+14.4. Taito
+15.4. Linda, Tuomi
+16.4. Jalo, Patrik
+17.4. Otto
+18.4. Valto, Valdemar
+19.4. Pilvi, Pälvi
+20.4. Lauha
+21.4. Anssi, Anselmi
+22.4. Alina
+23.4. Yrjö, Jyrki, Jyri, Jori, Yrjänä
+24.4. Pertti, Albert, Altti
+25.4. Markku, Marko, Markus
+26.4. Terttu, Teresa
+27.4. Merja
+28.4. Ilpo, Tuure, Ilppo
+29.4. Teijo
+30.4. Mirja, Miia, Mira, Mirva, Mirjami, Mirka, Mirkka
+
+1.5. Vappu, Valpuri
+2.5. Vuokko, Viivi
+3.5. Outi
+4.5. Roosa, Ruusu
+5.5. Maini
+6.5. Ylermi
+7.5. Helmi, Kastehelmi
+8.5. Heino
+9.5. Timo
+10.5. Aino, Aini, Aina, Ainikki
+11.5. Osmo
+12.5. Lotta
+13.5. Kukka, Floora
+14.5. Tuula
+15.5. Sofia, Sonja, Sohvi
+16.5. Ester, Essi, Esteri
+17.5. Maila, Mailis, Maili, Rebekka
+18.5. Erkki, Eero, Eerik, Eerika, Eerikki
+19.5. Emilia, Emma, Emmi, Milla, Milja, Milka, Amalia
+20.5. Lilja, Karoliina, Lilli
+21.5. Kosti, Konsta, Konstantin
+22.5. Hemminki, Hemmo
+23.5. Lyydia, Lyyli
+24.5. Tuukka, Touko
+25.5. Urpo
+26.5. Minna, Vilma, Vilhelmiina, Miina, Mimmi
+27.5. Ritva
+28.5. Alma
+29.5. Oiva, Oliver, Olivia, Oivi
+30.5. Pasi
+31.5. Helka, Helga	
+
+1.6. Teemu, Nikodemus
+2.6. Venla
+3.6. Orvokki, Viola
+4.6. Toivo
+5.6. Sulevi
+6.6. Kustaa, Kyösti, Kustavi
+7.6. Suvi, Roope, Robert
+8.6. Salomon, Salomo
+9.6. Ensio
+10.6. Seppo
+11.6. Impi, Immi
+12.6. Esko
+13.6. Raili, Raila
+14.6. Kielo, Pihla
+15.6. Vieno, Moona, Viena
+16.6. Päivi, Päivikki, Päivä
+17.6. Urho
+18.6. Tapio
+19.6. Siiri
+20.6. Into
+21.6. Ahti, Ahto
+22.6. Paula, Pauliina, Liina
+23.6. Aatu, Aatto, Aadolf
+24.6. Johannes, Juhani, Juha, Jukka, Janne, Juho, Jani, Jussi, Juhana
+25.6. Uuno
+26.6. Jorma, Jarmo, Jarkko, Jarno, Jere, Jeremias
+27.6. Elviira, Elvi
+28.6. Leo
+29.6. Pekka, Petri, Petra, Petteri, Pietari, Pekko
+30.6. Päiviö, Päivö
+	 
+1.7. Aaro, Aaron
+2.7. Maria, Maija, Mari, Meeri, Marika, Maiju, Maaria, Maikki, Kukka-Maaria
+3.7. Arvo
+4.7. Ulla, Ulpu
+5.7. Unto, Untamo
+6.7. Esa, Esaias
+7.7. Klaus, Launo
+8.7. Turo, Turkka
+9.7. Jasmin, Ilta
+10.7. Saima, Saimi
+11.7. Elli, Noora, Nelli, Eleonoora
+12.7. Hermanni, Herkko, Herman
+13.7. Joel, Ilari, Lari
+14.7. Aliisa, Alisa
+15.7. Rauni, Rauna
+16.7. Reino
+17.7. Ossi, Ossian
+18.7. Riikka
+19.7. Sari, Saara, Sara, Salla, Salli
+20.7. Marketta, Maarit, Reetta, Reeta, Maaret, Margareeta
+21.7. Johanna, Hanna, Jenni, Jenna, Jonna, Hannele, Hanne, Joanna
+22.7. Leena, Matleena, Leeni, Lenita
+23.7. Olga, Oili
+24.7. Kristiina, Tiina, Kirsti, Kirsi, Krista, Kiia
+25.7. Jaakko, Jaakob, Jimi, Jaakoppi
+26.7. Martta
+27.7. Heidi
+28.7. Atso
+29.7. Olavi, Olli, Uolevi, Uoti
+30.7. Asta
+31.7. Helena, Elena
+
+1.8. Maire
+2.8. Kimmo
+3.8. Nea, Linnea, Neea, Vanamo
+4.8. Veera
+5.8. Salme, Sanelma
+6.8. Toimi, Keimo
+7.8. Lahja
+8.8. Sylvi, Sylvia, Silva
+9.8. Erja, Eira
+10.8. Lauri, Lasse, Lassi
+11.8. Sanna, Susanna, Sanni, Susanne
+12.8. Klaara
+13.8. Jesse
+14.8. Onerva, Kanerva
+15.8. Marjatta, Marja, Jaana, Marjo, Marita, Marjut, Marianne, Maritta, Marjaana, Marjukka, Marianna
+16.8. Aulis
+17.8. Verneri
+18.8. Leevi
+19.8. Mauno, Maunu
+20.8. Sami, Samuli, Samu, Samuel
+21.8. Soini, Veini
+22.8. Iivari, Iivo
+23.8. Signe, Varma
+24.8. Perttu
+25.8. Loviisa
+26.8. Ilmi, Ilma, Ilmatar
+27.8. Rauli
+28.8. Tauno
+29.8. Iina, Iines, Inari
+30.8. Eemil, Eemeli
+31.8. Arvi
+
+1.9. Pirkka
+2.9. Sinikka, Sini
+3.9. Soile, Soili, Soila
+4.9. Ansa
+5.9. Roni, Mainio
+6.9. Asko
+7.9. Miro, Arho, Arhippa
+8.9. Taimi
+9.9. Eevert, Isto
+10.9. Kalevi, Kaleva
+11.9. Santeri, Aleksanteri, Aleksandra, Santtu, Ali, Ale
+12.9. Valma, Vilja
+13.9. Orvo
+14.9. Iida
+15.9. Sirpa
+16.9. Hilla, Hellevi, Hillevi, Hille
+17.9. Aili, Aila
+18.9. Tyyne, Tytti, Tyyni
+19.9. Reija
+20.9. Varpu, Vaula
+21.9. Mervi
+22.9. Mauri
+23.9. Mielikki
+24.9. Alvar, Auno
+25.9. Kullervo
+26.9. Kuisma
+27.9. Vesa
+28.9. Arja
+29.9. Mikko, Mika, Mikael, Miika, Miikka, Miska, Miko, Mikaela
+30.9. Sirja, Sorja
+
+1.10. Rauno, Rainer, Raine, Raino
+2.10. Valio
+3.10. Raimo
+4.10. Saija, Saila
+5.10. Inkeri, Inka
+6.10. Pinja, Minttu
+7.10. Pirkko, Pirjo, Piritta, Pirita, Birgitta
+8.10. Hilja
+9.10. Ilona
+10.10. Aleksi, Aleksis
+11.10. Otso, Ohto
+12.10. Aarre, Aarto
+13.10. Taina, Tanja, Taija
+14.10. Elsa, Else, Elsi
+15.10. Helvi, Heta
+16.10. Sirkka, Sirkku
+17.10. Saana, Saini
+18.10. Satu, Säde
+19.10. Uljas
+20.10. Kasperi, Kauno
+21.10. Ursula
+22.10. Anja, Anita, Anniina, Anitta
+23.10. Severi
+24.10. Rasmus, Asmo
+25.10. Sointu
+26.10. Niina, Nina, Amanda, Manta
+27.10. Helli, Hellin, Hellä, Helle
+28.10. Simo
+29.10. Alfred, Urmas
+30.10. Eila
+31.10. Arto, Arttu, Artturi
+
+1.11. Pyry, Lyly
+2.11. Topi, Topias
+3.11. Terho
+4.11. Hertta
+5.11. Reima
+6.11. Kustaa Aadolf
+7.11. Taisto
+8.11. Aatos
+9.11. Teuvo
+10.11. Martti
+11.11. Panu
+12.11. Virpi
+13.11. Kristian, Ano
+14.11. Iiris
+15.11. Janina, Janika, Janita, Janette
+16.11. Aarne, Aarno, Aarni
+17.11. Eino, Einari
+18.11. Tenho, Jousia
+19.11. Liisa, Elisa, Eliisa, Liisi, Elisabet, Elise
+20.11. Jari, Jalmari
+21.11. Hilma
+22.11. Silja, Selja
+23.11. Ismo
+24.11. Lempi, Lemmikki, Sivi
+25.11. Katri, Kaija, Katja, Kaisa, Kati, Kaarina, Kaisu, Riina, Katariina, Katriina
+26.11. Sisko
+27.11. Hilkka
+28.11. Heini
+29.11. Aimo
+30.11. Antti, Antero, Atte
+
+1.12. Oskari
+2.12. Anelma, Unelma
+3.12. Meri, Vellamo
+4.12. Airi, Aira
+5.12. Selma
+6.12. Niilo, Niko, Nikolai, Niklas
+7.12. Sampsa
+8.12. Kyllikki, Kylli
+9.12. Anna, Anne, Anni, Anu, Anneli, Annikki, Annika, Annukka
+10.12. Jutta
+11.12. Tatu, Taneli, Daniel
+12.12. Tuovi
+13.12. Seija
+14.12. Jouko
+15.12. Heimo
+16.12. Auli, Aulikki, Aada
+17.12. Raakel
+18.12. Aapo, Rami, Aappo
+19.12. Iiro, Iisakki, Iikka, Isko
+20.12. Benjamin, Kerkko
+21.12. Tuomas, Tomi, Tommi, Tuomo
+22.12. Raafael
+23.12. Senni
+24.12. Aatami, Eeva, Eevi, Eveliina
+25.12. Joulupäivä
+26.12. Tapani, Teppo, Tahvo
+27.12. Hannu, Hannes
+28.12. Piia
+29.12. Rauha
+30.12. Taavetti, Taavi, Daavid
+31.12. Sylvester, Silvo
+ 
