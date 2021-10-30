@@ -5,8 +5,6 @@ import org.freakz.hokan_ng_springboot.bot.common.jms.api.JmsSender;
 import org.freakz.hokan_ng_springboot.bot.common.jpa.service.DataValuesService;
 import org.freakz.hokan_ng_springboot.bot.services.service.patch.LogFileFeedService;
 import org.freakz.hokan_ng_springboot.bot.services.service.topcounter.TopCountService;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
@@ -21,12 +19,12 @@ public class LogFileFeederTest {
     @Mock
     private JmsSender jsmSender;
 
-    @BeforeAll
+  //  @BeforeAll
     public void initMocks() {
         MockitoAnnotations.initMocks(this);
     }
 
-    @Test
+    //    @Test
     public void testLogFileFeeder() throws IOException {
         TopCountService topCountService = new TopCountService(dataValuesService, jsmSender);
 
