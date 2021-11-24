@@ -449,7 +449,7 @@ public class WholeLineTriggersImpl implements WholeLineTriggers {
 //        checkDrugs(iEvent);
         checkPilalla(iEvent);
 //        checkPerkeleVittu(iEvent);
-//        checkJoulu(iEvent);
+        checkJoulu(iEvent);
 //        checkJuhannus(iEvent);
         checkPitasko(iEvent);
 //        checkSpede(iEvent);
