@@ -169,6 +169,12 @@ public class WholeLineTriggersImpl implements WholeLineTriggers {
         return jouluTime;
     }
 
+    public boolean isVäliPäivä() {
+        LocalDateTime now = LocalDateTime.now();
+        LocalDateTime start = LocalDateTime.of(now.getYear(), 12, 24, 12, 0);
+        LocalDateTime end = LocalDateTime.of(now.getYear(), 12, 31, 23, 59);
+        return now.isAfter(start) && now.isBefore(end);
+    }
 
     public void checkJoulu(IrcMessageEvent iEvent) {
 
@@ -176,6 +182,13 @@ public class WholeLineTriggersImpl implements WholeLineTriggers {
 
         int rnd = 1 + (int) (Math.random() * 100);
         if (line.contains("joulu") && rnd > jouluRandomBase) {
+
+
+            if (isVäliPäivä()) {
+                processReply(iEvent, _olpo + "Tän vuaren joulu meni jo!");
+                return;
+            }
+
             LocalDateTime now = LocalDateTime.now();
             LocalDateTime jouluTime = getJouluTime(now);
             TimeDifferenceData timeDifference = timeDifferenceService.getTimeDifference(now, jouluTime);
