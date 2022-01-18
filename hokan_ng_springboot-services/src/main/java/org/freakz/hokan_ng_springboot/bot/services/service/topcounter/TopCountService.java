@@ -3,7 +3,11 @@ package org.freakz.hokan_ng_springboot.bot.services.service.topcounter;
 import lombok.extern.slf4j.Slf4j;
 import org.freakz.hokan_ng_springboot.bot.common.enums.HokanModule;
 import org.freakz.hokan_ng_springboot.bot.common.enums.TopCountsEnum;
-import org.freakz.hokan_ng_springboot.bot.common.events.*;
+import org.freakz.hokan_ng_springboot.bot.common.events.IrcMessageEvent;
+import org.freakz.hokan_ng_springboot.bot.common.events.NotifyRequest;
+import org.freakz.hokan_ng_springboot.bot.common.events.ServiceRequest;
+import org.freakz.hokan_ng_springboot.bot.common.events.ServiceRequestType;
+import org.freakz.hokan_ng_springboot.bot.common.events.ServiceResponse;
 import org.freakz.hokan_ng_springboot.bot.common.jms.api.JmsSender;
 import org.freakz.hokan_ng_springboot.bot.common.jpa.service.DataValuesService;
 import org.freakz.hokan_ng_springboot.bot.common.models.DataValuesModel;
@@ -94,19 +98,46 @@ public class TopCountService {
 
             }
 
-            int oldPos = getNickPosition(channel, network, countEnum.getKeyName(), nick);
+            PositionChange oldPos = getNickPosition(channel, network, countEnum.getKeyName(), nick);
 
 //            log.debug("{} {} count: {}", key, nick, value);
             dataValuesService.setValue(nick, channel, network, keyWithTime, value);
 
-            int newPos = getNickPosition(channel, network, countEnum.getKeyName(), nick);
+            PositionChange newPos = getNickPosition(channel, network, countEnum.getKeyName(), nick);
 
 //            log.debug("key: {} - oldPos: {} <-> newPos {}", key, oldPos, newPos);
-            if (oldPos != -1 && newPos != -1) {
-                if (oldPos != newPos) {
+
+            if (oldPos != null && newPos != null) {
+                if (newPos.position < oldPos.position) {
+
+                    String posText;
+                    if (newPos.position == 1) {
+                        posText = String.format("*%s*  \u0002%d. you = %s\u0002 <--> %d. %s = %s",
+                                countEnum.getPrettyName(),
+                                newPos.position,
+                                newPos.own.getValue(),
+                                newPos.position + 1,
+                                newPos.after.getNick(),
+                                newPos.after.getValue()
+                        );
+
+                    } else {
+                        posText = String.format("*%s*  %d. %s = %s <--> \u0002%d. you = %s\u0002 <--> %d. %s = %s",
+                                countEnum.getPrettyName(),
+                                newPos.position - 1,
+                                newPos.ahead.getNick(),
+                                newPos.ahead.getValue(),
+                                newPos.position,
+                                newPos.own.getValue(),
+                                newPos.position + 1,
+                                newPos.after.getNick(),
+                                newPos.after.getValue()
+                        );
+
+                    }
                     IrcMessageEvent iEvent = request.getIrcMessageEvent();
-                    String positionChange = String.format("%s: %d. -> %d. !!", countEnum.getKeyName(), oldPos, newPos);
-                    processReply(iEvent, iEvent.getSender() + ": " + positionChange);
+//                    String positionChange = String.format("%s: %d. -> %d. !!", countEnum.getKeyName(), oldPos.position, newPos.position);
+                    processReply(iEvent, iEvent.getSender() + ": " + posText);
                 }
             }
             return true;
@@ -136,18 +167,33 @@ public class TopCountService {
         jmsSender.send(HokanModule.HokanServices, HokanModule.HokanIo.getQueueName(), "WHOLE_LINE_TRIGGER_NOTIFY_REQUEST", notifyRequest, false);
     }
 
-    private int getNickPosition(String channel, String network, String key, String nick) {
+    class PositionChange {
+        DataValuesModel ahead = null;
+        DataValuesModel own = null;
+        int position = 0;
+        DataValuesModel after = null;
+    }
+
+    private PositionChange getNickPosition(String channel, String network, String key, String nick) {
         List<DataValuesModel> dataValues = dataValuesService.getDataValuesAsc(channel, network, key);
         if (dataValues.size() > 0) {
-            int c = 1;
-            for (DataValuesModel model : dataValues) {
-                if (model.getNick().equalsIgnoreCase(nick)) {
-                    return c;
+
+            for (int i = 0; i < dataValues.size(); i++) {
+                if (dataValues.get(i).getNick().equalsIgnoreCase(nick)) {
+                    PositionChange change = new PositionChange();
+                    change.own = dataValues.get(i);
+                    change.position = i + 1;
+                    if (i > 0) {
+                        change.ahead = dataValues.get(i - 1);
+                    }
+                    if (i != dataValues.size() - 1) {
+                        change.after = dataValues.get(i + 1);
+                    }
+                    return change;
                 }
-                c++;
             }
         }
-        return -1;
+        return null;
     }
 
 }
