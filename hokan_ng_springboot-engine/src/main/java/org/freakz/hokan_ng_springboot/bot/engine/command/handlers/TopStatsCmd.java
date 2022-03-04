@@ -64,6 +64,8 @@ public class TopStatsCmd extends Cmd {
 
         String channel = request.getIrcEvent().getChannel().toLowerCase();
         String network = request.getIrcEvent().getNetwork().toLowerCase();
+
+
         String nick;
         if (results.getString(ARG_NICK).equals("me")) {
             nick = request.getIrcEvent().getSender().toLowerCase();
