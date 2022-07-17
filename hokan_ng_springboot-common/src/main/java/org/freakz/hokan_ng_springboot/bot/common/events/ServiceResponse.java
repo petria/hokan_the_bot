@@ -1,7 +1,21 @@
 package org.freakz.hokan_ng_springboot.bot.common.events;
 
 import org.freakz.hokan_ng_springboot.bot.common.enums.LunchPlace;
-import org.freakz.hokan_ng_springboot.bot.common.models.*;
+import org.freakz.hokan_ng_springboot.bot.common.models.AlkoSearchResults;
+import org.freakz.hokan_ng_springboot.bot.common.models.ChannelSetTopic;
+import org.freakz.hokan_ng_springboot.bot.common.models.DataUpdaterModel;
+import org.freakz.hokan_ng_springboot.bot.common.models.FindCityResults;
+import org.freakz.hokan_ng_springboot.bot.common.models.GoogleCurrency;
+import org.freakz.hokan_ng_springboot.bot.common.models.HourlyWeatherData;
+import org.freakz.hokan_ng_springboot.bot.common.models.IMDBDetails;
+import org.freakz.hokan_ng_springboot.bot.common.models.IMDBSearchResults;
+import org.freakz.hokan_ng_springboot.bot.common.models.KelikameratWeatherData;
+import org.freakz.hokan_ng_springboot.bot.common.models.LunchPlaceData;
+import org.freakz.hokan_ng_springboot.bot.common.models.MetarData;
+import org.freakz.hokan_ng_springboot.bot.common.models.NatoRatifyStats;
+import org.freakz.hokan_ng_springboot.bot.common.models.NimipaivaData;
+import org.freakz.hokan_ng_springboot.bot.common.models.ScriptResult;
+import org.freakz.hokan_ng_springboot.bot.common.models.TranslateResponse;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -142,6 +156,11 @@ public class ServiceResponse implements Serializable {
 
     public Integer[] getKoronas() {
         return (Integer[]) responseData.get(type.getResponseDataKey());
+    }
+
+    public NatoRatifyStats getNatoRatifyStats() {
+        return (NatoRatifyStats) responseData.get(type.getResponseDataKey());
+
     }
 
 }

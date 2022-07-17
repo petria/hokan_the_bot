@@ -1,6 +1,10 @@
 package org.freakz.hokan_ng_springboot.bot.engine.command.handlers;
 
-import com.martiansoftware.jsap.*;
+import com.martiansoftware.jsap.FlaggedOption;
+import com.martiansoftware.jsap.JSAP;
+import com.martiansoftware.jsap.JSAPResult;
+import com.martiansoftware.jsap.Switch;
+import com.martiansoftware.jsap.UnflaggedOption;
 import org.freakz.hokan_ng_springboot.bot.common.events.EngineResponse;
 import org.freakz.hokan_ng_springboot.bot.common.events.InternalRequest;
 import org.freakz.hokan_ng_springboot.bot.common.events.ServiceRequestType;
@@ -15,8 +19,11 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
-import static org.freakz.hokan_ng_springboot.bot.common.util.StaticStrings.*;
+import static org.freakz.hokan_ng_springboot.bot.common.util.StaticStrings.ARG_COUNT;
+import static org.freakz.hokan_ng_springboot.bot.common.util.StaticStrings.ARG_PLACE;
+import static org.freakz.hokan_ng_springboot.bot.common.util.StaticStrings.ARG_VERBOSE;
 
 /**
  * User: petria
@@ -79,6 +86,8 @@ public class WeatherCmd extends Cmd {
             return;
         }
 
+        List<KelikameratWeatherData> filtered = data.stream().filter(k -> k.getPlace().matches(".*Rantatunneli.*")).collect(Collectors.toList());
+
         StringBuilder sb = new StringBuilder();
 
         if (place.equals("minmax")) {
@@ -112,10 +121,15 @@ public class WeatherCmd extends Cmd {
                     if (wd.getAir() == null) {
                         continue;
                     }
+                    String formatted = formatWeather(wd, verbose);
+                    if (formatted.contains("Rantatunneli")) {
+                        continue;
+                    }
+
                     if (xx != 0) {
                         sb.append(", ");
                     }
-                    sb.append(formatWeather(wd, verbose));
+                    sb.append(formatted);
                     xx++;
                     if (xx > results.getInt(ARG_COUNT)) {
                         break;

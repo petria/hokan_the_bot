@@ -17,6 +17,7 @@ import org.freakz.hokan_ng_springboot.bot.services.service.sms.SMSSenderService;
 import org.freakz.hokan_ng_springboot.bot.services.service.sms.SMSSenderServiceImpl;
 import org.freakz.hokan_ng_springboot.bot.services.service.timer.KoronaCheckService;
 import org.freakz.hokan_ng_springboot.bot.services.service.timer.KoronaJSONReader;
+import org.freakz.hokan_ng_springboot.bot.services.service.timer.NatoRatificationsService;
 import org.freakz.hokan_ng_springboot.bot.services.service.timer.YuleCheckService;
 import org.freakz.hokan_ng_springboot.bot.services.service.weather.IlmatieteenlaitosRequestHandler;
 import org.freakz.hokan_ng_springboot.bot.services.service.wholelinetricker.WholeLineTriggersImpl;
@@ -64,6 +65,12 @@ public class IntegrationTest {
         service.test();
     }
 
+    @Test
+    public void testNatoOtan() {
+        NatoRatificationsService service = new NatoRatificationsService();
+        service.fetchNatoData();
+
+    }
 
     @Test
     public void testDistanceService() {
