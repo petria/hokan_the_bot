@@ -9,6 +9,7 @@ import org.freakz.hokan_ng_springboot.bot.common.jms.api.JmsSender;
 import org.freakz.hokan_ng_springboot.bot.common.jpa.service.ChannelPropertyService;
 import org.freakz.hokan_ng_springboot.bot.common.jpa.service.DataValuesService;
 import org.freakz.hokan_ng_springboot.bot.common.jpa.service.PropertyService;
+import org.freakz.hokan_ng_springboot.bot.common.models.NatoRatifyStats;
 import org.freakz.hokan_ng_springboot.bot.common.util.CommandArgs;
 import org.freakz.hokan_ng_springboot.bot.services.config.RuntimeConfig;
 import org.freakz.hokan_ng_springboot.bot.services.service.distance.DistanceService;
@@ -24,6 +25,7 @@ import org.freakz.hokan_ng_springboot.bot.services.service.wholelinetricker.Whol
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -68,7 +70,12 @@ public class IntegrationTest {
     @Test
     public void testNatoOtan() {
         NatoRatificationsService service = new NatoRatificationsService();
-        service.fetchNatoData();
+        NatoRatifyStats stats = service.fetchNatoData();
+        BigDecimal bd1 = new BigDecimal(stats.getRatified().size());
+        BigDecimal divide = bd1.divide(new BigDecimal("30"));
+        BigDecimal percent = divide.multiply(new BigDecimal("100"));
+
+        System.out.printf("%s%s\n", percent.toString(), "%");
 
     }
 
