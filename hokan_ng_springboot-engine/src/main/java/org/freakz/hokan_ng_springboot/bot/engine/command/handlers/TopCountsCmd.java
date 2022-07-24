@@ -74,7 +74,7 @@ public class TopCountsCmd extends Cmd {
                 sb.append(" ");
                 c++;
                 if (c == 11) {
-                    sb.append("(").append(dataValues.size()).append(" more in list!)");
+                    sb.append("(").append(dataValues.size()).append(" total in list!)");
                     break;
                 }
             }
