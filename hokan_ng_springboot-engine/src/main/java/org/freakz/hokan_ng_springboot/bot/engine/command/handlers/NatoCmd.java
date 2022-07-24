@@ -12,8 +12,6 @@ import org.freakz.hokan_ng_springboot.bot.engine.command.annotation.HelpGroups;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import java.math.BigDecimal;
-
 @Component
 @HelpGroups(
         helpGroups = {HelpGroup.DATA_FETCHERS}
@@ -26,11 +24,11 @@ public class NatoCmd extends Cmd {
         ServiceResponse serviceResponse = doServicesRequest(ServiceRequestType.NATO_REQUEST, request.getIrcEvent(), "");
         if (serviceResponse != null) {
             NatoRatifyStats stats = serviceResponse.getNatoRatifyStats();
-            BigDecimal bd1 = new BigDecimal(stats.getRatified().size());
-            BigDecimal divide = bd1.divide(new BigDecimal("30"));
-            BigDecimal percent = divide.multiply(new BigDecimal("100"));
+            Double bd1 = Double.parseDouble(stats.getRatified().size() + "");
+            Double div = bd1 / 30d;
+            Double percent = div * 100d;
 
-            response.addResponse("OTAN: %d/%d = %s%s", stats.getRatified().size(), 30, percent.toString(), "%");
+            response.addResponse("OTAN: %d/%d = %2.2f%s", stats.getRatified().size(), 30, percent, "%");
         }
 
     }

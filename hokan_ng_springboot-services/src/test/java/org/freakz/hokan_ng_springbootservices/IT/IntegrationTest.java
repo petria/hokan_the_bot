@@ -25,7 +25,6 @@ import org.freakz.hokan_ng_springboot.bot.services.service.wholelinetricker.Whol
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
-import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -71,11 +70,11 @@ public class IntegrationTest {
     public void testNatoOtan() {
         NatoRatificationsService service = new NatoRatificationsService();
         NatoRatifyStats stats = service.fetchNatoData();
-        BigDecimal bd1 = new BigDecimal(stats.getRatified().size());
-        BigDecimal divide = bd1.divide(new BigDecimal("30"));
-        BigDecimal percent = divide.multiply(new BigDecimal("100"));
+        Double bd1 = Double.parseDouble(stats.getRatified().size() + "");
+        Double div = bd1 / 30d;
+        Double percent = div * 100d;
 
-        System.out.printf("%s%s\n", percent.toString(), "%");
+        System.out.printf("%2.2f%s\n", percent, "%");
 
     }
 
