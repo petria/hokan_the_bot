@@ -42,4 +42,13 @@ public class NatoRatifyStats implements Serializable {
     public void setUpdated(String updated) {
         this.updated = updated;
     }
+
+    @Override
+    public String toString() {
+        double bd1 = Double.parseDouble(getRatified().size() + "");
+        double div = bd1 / 30d;
+        double percent = div * 100d;
+        return String.format("OTAN: %d/%d = %2.2f%s", getRatified().size(), 30, percent, "%");
+
+    }
 }

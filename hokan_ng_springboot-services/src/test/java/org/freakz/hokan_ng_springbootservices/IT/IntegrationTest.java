@@ -68,7 +68,7 @@ public class IntegrationTest {
 
     @Test
     public void testNatoOtan() {
-        NatoRatificationsService service = new NatoRatificationsService();
+        NatoRatificationsService service = new NatoRatificationsService(channelPropertyService, dataValuesService, jmsSender);
         NatoRatifyStats stats = service.fetchNatoData();
         Double bd1 = Double.parseDouble(stats.getRatified().size() + "");
         Double div = bd1 / 30d;

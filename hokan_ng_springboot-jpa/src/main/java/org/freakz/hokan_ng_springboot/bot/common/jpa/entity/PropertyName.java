@@ -45,6 +45,7 @@ public enum PropertyName {
     PROP_CHANNEL_DO_JOIN_MESSAGE("channel.DoJoinMessage"),
     PROP_CHANNEL_DO_KICK_REJOIN("channel.DoKickRejoin"),
     PROP_CHANNEL_DO_KORONA("channel.DoKorona"),
+    PROP_CHANNEL_DO_OTAN("channel.DoOtan"),
     PROP_CHANNEL_DO_TVNOTIFY("channel.DoNotify"),
     PROP_CHANNEL_DO_SEARCH_REPLACE("channel.DoSearchReplace"),
     PROP_CHANNEL_DO_STATS("channel.DoStats"),

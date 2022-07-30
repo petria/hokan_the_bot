@@ -24,11 +24,7 @@ public class NatoCmd extends Cmd {
         ServiceResponse serviceResponse = doServicesRequest(ServiceRequestType.NATO_REQUEST, request.getIrcEvent(), "");
         if (serviceResponse != null) {
             NatoRatifyStats stats = serviceResponse.getNatoRatifyStats();
-            Double bd1 = Double.parseDouble(stats.getRatified().size() + "");
-            Double div = bd1 / 30d;
-            Double percent = div * 100d;
-
-            response.addResponse("OTAN: %d/%d = %2.2f%s", stats.getRatified().size(), 30, percent, "%");
+            response.addResponse(stats.toString());
         }
 
     }
