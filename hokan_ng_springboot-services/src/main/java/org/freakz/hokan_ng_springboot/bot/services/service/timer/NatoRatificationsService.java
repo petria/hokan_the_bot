@@ -89,7 +89,7 @@ public class NatoRatificationsService {
         response.setResponseData(request.getType().getResponseDataKey(), natoRatifyStats);
     }
 
-    @Scheduled(fixedRate = 30 * 60 * 1000)
+    @Scheduled(fixedRate = 60 * 1000)
     public void notifyTimer() {
         sendNotify();
     }
